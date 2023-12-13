@@ -49,11 +49,11 @@
                 </div>
             </div>
             <div class="container">
-                <div class="bordery">
+                <div >
                     <div class="row">
                         <div class="d-flex justify-content-between ">
                             <div class="col-8">
-                                <input class="form-control form-control-md " type="text" placeholder="Aggiungi alla lista" >
+                                <input class="form-control form-control-md " v-model="listTesto"  type="text" placeholder="Aggiungi alla lista" >
                             </div>
                             <div class="col-4">
                                 <button class="btn-success btn  btn-md mx-3 " @click="aggiuntaLista">Invia</button>

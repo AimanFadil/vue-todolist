@@ -50,8 +50,9 @@ createApp({
             this.lista_do.splice(index,1)
         },
         aggiuntaLista(){
+            console.log(this.listTesto)
             let li ={
-                text:this.listTesto,
+                text: this.listTesto,
                 done: false,
             }
             this.lista_do.push(li)
