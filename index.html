@@ -32,7 +32,10 @@
                     <div class="col-12 ">
                         <div class="bordery content d-flex justify-content-center ">
                             <ul >
-                                <li  v-for="(lista, index) in lista_do" :key="index"><h3 class="py-3">{{ lista.text }}</h3></li>
+                                <li v-for="(lista, index) in lista_do" 
+                                :key="index"><h3 
+                                class="py-3" 
+                                :class="lista.done ? 'text-decoration-line-through': ''">{{ lista.text }}</h3></li>
                             </ul>
                         </div>
                     </div>
