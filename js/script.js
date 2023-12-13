@@ -45,7 +45,9 @@ createApp({
        } 
     },
     methods:{
-     
+        eliminaLista(index){
+            this.lista_do.splice(index,1)
+        }
 
     }
 }).mount('#app')

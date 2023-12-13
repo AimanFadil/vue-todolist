@@ -5,6 +5,7 @@
 }
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 
 header{
@@ -13,9 +14,11 @@ header{
     
 }
 main{
-    background-color: black;
+    
     color: goldenrod;
-    overflow-y: auto;
+    background-color: black;
+    height: calc(100vh - 200px);
+
 }
 .yellow{
     color: goldenrod;
@@ -31,3 +34,7 @@ img{
 .content{
     margin: 10px;
 }
+.texw{
+    font-size: x-large;
+}
+

@@ -28,14 +28,20 @@
         <div id="app">
             <div class="container">
                 <div class="row">
-                    <h1 class="d-flex justify-content-center my-4">Ecco le cose da fare</h1>    
+                    <h3 class="d-flex justify-content-center my-4">Ecco le cose da fare</h3>    
                     <div class="col-12 ">
                         <div class="bordery content d-flex justify-content-center ">
                             <ul >
-                                <li v-for="(lista, index) in lista_do" 
-                                :key="index"><h3 
-                                class="py-3" 
-                                :class="lista.done ? 'text-decoration-line-through': ''">{{ lista.text }}</h3></li>
+                                <li v-for="(lista, index) in lista_do" :key="index" class="py-3 texw " :class="lista.done ? 'text-decoration-line-through': ''">
+                                    <div class="d-flex justify-content-between ">
+                                        <div>
+                                            {{ lista.text }} 
+                                        </div>
+                                        <div class="px-4 ">
+                                            <button class="btn-danger btn  btn-sm" @click="eliminaLista(index)">X</button>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
