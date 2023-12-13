@@ -3,3 +3,31 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    height: 200px;
+    background-color: goldenrod;
+    
+}
+main{
+    background-color: black;
+    color: goldenrod;
+    overflow-y: auto;
+}
+.yellow{
+    color: goldenrod;
+}
+.bordery{
+    border: goldenrod 5px solid;
+}
+
+img{
+    width: 50%;
+}
+
+.content{
+    margin: 10px;
+}
