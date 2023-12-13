@@ -33,12 +33,13 @@
                         <div class="bordery content d-flex justify-content-center ">
                             <ul >
                                 <li v-for="(lista, index) in lista_do" :key="index" class="py-3 texw " :class="lista.done ? 'text-decoration-line-through': ''">
-                                    <div class="d-flex justify-content-between ">
+                                    <div class="d-flex justify-content-between pointer" @click="lista.done = !lista.done">
                                         <div>
                                             {{ lista.text }} 
                                         </div>
                                         <div class="px-4 ">
-                                            <button class="btn-danger btn  btn-sm" @click="eliminaLista(index)">X</button>
+                                            <button class="btn-danger btn  btn-sm " @click="eliminaLista(index)">X</button>
+                                            <button class="btn-warning btn  btn-sm mx-4" @click="aggiuntaLista">ADD</button>
                                         </div>
                                     </div>
                                 </li>

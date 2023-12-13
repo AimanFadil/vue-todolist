@@ -3,6 +3,7 @@ const { createApp } = Vue;
 createApp({
     data(){
         return{
+            listTesto :'',
             lista_do: [
                 {
                    text : 'Apri il Client',
@@ -21,11 +22,11 @@ createApp({
                     done : true,  
                 },
                 {
-                    text : 'Clicca la x in alto a destra',
+                    text : 'Chiudi il gioco',
                     done : false,  
                 },
                 {
-                    text : 'Entra sulle impostazioni del profilo',
+                    text : 'Entra sulle impostazioni',
                     done : false,  
                 },
                 {
@@ -47,6 +48,14 @@ createApp({
     methods:{
         eliminaLista(index){
             this.lista_do.splice(index,1)
+        },
+        aggiuntaLista(){
+            let li ={
+                text:this.listTesto,
+                done: false,
+            }
+            this.lista_do.push(li)
+            this.listTesto = ''
         }
 
     }
